@@ -283,7 +283,11 @@ document.getElementById("musicToggle").addEventListener("click", function(e) {
     </div>
   </div>
   <!-- END banner overlay -->
-
+<!-- Add somewhere in undone.html UI (header or game modal) -->
+<div id="cloud-save-controls" style="position:fixed; bottom:16px; right:16px; z-index:99999;">
+  <button id="btnUploadToCloud">Send Save To Cloud</button>
+  <button id="btnDownloadFromCloud">Load Save From Cloud</button>
+</div>
     
 <div class="settings-container">
   <button class="settings-toggle" onclick="toggleSettings()">⚙️</button>
@@ -1276,6 +1280,15 @@ document.getElementById("musicToggle").addEventListener("click", function(e) {
                             </div>
                         </div>
 
+                        <div class="game-card" onclick="openGame('games/retro-bowl/college')" style="cursor: pointer;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Retro Bowl College</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
                         <a href="https://riddle.macbooksuck.xyz/School/1/" class="game-card">
                             <div class="card-background blue-purple"></div>
                             <div class="card-content">
@@ -1747,7 +1760,7 @@ document.getElementById("musicToggle").addEventListener("click", function(e) {
                             <div class="badge new">New</div>
                         </a>
 
-                        <div class="game-card new-card" onclick="openGame('games/bit-planes-2')" style="cursor: pointer;">
+                        <div class="game-card new-card" onclick="openGame('games/bit-planes-2')" class="game-card new-card" style="display: none;"></div>
                             <div class="card-background blue-purple"></div>
                             <div class="card-content">
                                 <div class="game-title">bitplanes 2 player</div>
@@ -1756,7 +1769,16 @@ document.getElementById("musicToggle").addEventListener("click", function(e) {
                             <div class="badge new">New</div>
                           </div>
 
-                        <div class="game-card new-card" onclick="openGame('games/Five-Nights-at-Epstein')" style="cursor: pointer;">
+                        <div class="game-card" onclick="openGame('games/retro-bowl/college')" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Retro Bowl College</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <div class="game-card new-card" onclick="openGame('games/Five-Nights-at-Epstein')" class="game-card new-card" style="display: none;">
                             <div class="card-background blue-purple"></div>
                             <div class="card-content">
                                 <div class="game-title">Five Nights at Epstein</div>
@@ -2398,6 +2420,85 @@ function updateUIForGuahh(user) {
 </script>
 
 <script>
+/* Parent orchestrator — place in undone.html (parent) */
+const ALLOWED_ORIGIN_MATCH = "macbooksuck.xyz"; // allow any subdomain
+
+function allowedOrigin(origin) {
+  try { return origin && origin.includes(ALLOWED_ORIGIN_MATCH); } catch { return false; }
+}
+
+/**
+ * Ask the active iframe to export its save.
+ * iframeWindow should be the contentWindow of the game iframe.
+ */
+function requestExportFromIframe(iframeWindow) {
+  iframeWindow.postMessage({ type: "REQUEST_EXPORT_SAVE" }, "*");
+}
+
+/**
+ * Ask the active iframe to import save payload.
+ */
+function sendImportToIframe(iframeWindow, payload) {
+  iframeWindow.postMessage({ type: "IMPORT_SAVE", payload }, "*");
+}
+
+// Listen for export replies from games
+window.addEventListener("message", async (event) => {
+  if (!allowedOrigin(event.origin)) return;
+  const data = event.data || {};
+  if (data.type === "EXPORT_SAVE") {
+    // data.payload = { type: "unity" | "html5", ... } as sent by game
+    const gameId = data.gameId || data.payload?.gameId || (event.source && event.source.location ? event.source.location.pathname : null);
+    if (!gameId) {
+      console.warn("[Parent] No gameId found for EXPORT_SAVE");
+      return;
+    }
+    if (!window.currentUser || !window.supabaseClient) {
+      console.warn("[Parent] No currentUser or supabaseClient; cannot save.");
+      return;
+    }
+
+    try {
+      await window.cloudSave(gameId, data.payload);
+      console.log("[Parent] Cloud save uploaded for", gameId);
+      alert("Cloud save uploaded.");
+    } catch (e) {
+      console.error("[Parent] Failed cloud save", e);
+      alert("Failed to upload save.");
+    }
+  }
+});
+
+// Buttons behavior: assumes you have an iframe with id 'gameFrame' for the opened game.
+// If your iframe id or selection differs, change accordingly.
+function getActiveGameIframe() {
+  return document.querySelector("#gameFrame"); // change selector if different
+}
+
+document.getElementById("btnUploadToCloud").addEventListener("click", () => {
+  const iframe = getActiveGameIframe();
+  if (!iframe || !iframe.contentWindow) return alert("Open a game first.");
+  requestExportFromIframe(iframe.contentWindow);
+});
+
+document.getElementById("btnDownloadFromCloud").addEventListener("click", async () => {
+  const iframe = getActiveGameIframe();
+  if (!iframe || !iframe.contentWindow) return alert("Open a game first.");
+
+  // Determine game id for the iframe. If you open games with a path, use that.
+  // Here we try to read iframe.src or fallback to the currently-open game's path in your app.
+  const gamePath = iframe.getAttribute("data-game-path") || iframe.src || location.pathname;
+  if (!window.currentUser || !window.supabaseClient) return alert("Log in to use cloud saves.");
+
+  const save = await window.cloudLoad(gamePath);
+  if (!save) return alert("No cloud save found.");
+  // send payload to iframe to import
+  sendImportToIframe(iframe.contentWindow, save);
+  // ui note: the game must FS.syncfs to pick it up; the game responder will do that and notify user
+});
+</script>
+
+<script>
 document.querySelector('.search-input').addEventListener('input', function(e) {
   const query = e.target.value.toLowerCase();
   document.querySelectorAll('.game-card').forEach(card => {
@@ -2567,6 +2668,6 @@ function toggleSettings() {
 <script src="javascript/banner.js"></script>    
 <script src="https://cdn.jsdelivr.net/gh/guahhinc/fire@main/guahh-auth.js"></script>
 <script src="guahh-auth-api.js"></script>    
-
+<script src="javascript/version.js"></script>  
 </body>
 </html>
