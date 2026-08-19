@@ -759,7 +759,7 @@ html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Seg
 }
 
 .banner-inner{
-  background:linear-gradient(180deg, rgba(38,206,59,0.8), rgba(255,255,255,0.03));
+  background:linear-gradient(180deg, rgba(38,206,59,0.8), rgba(38,206,59,0.8));
   padding:22px;
   border-radius:10px;
   backdrop-filter:blur(6px);
