@@ -4,7 +4,7 @@
   const dismissBtn = document.getElementById('dismissBtn');
   const openSite = document.getElementById('openSite');
 
-  const KEY = 'kangaroo_banner_dismissed_v1';
+  const KEY = 'honk_banner_dismissed_v1';
 
   // Show banner on load unless dismissed earlier
   if (!localStorage.getItem(KEY)) {
