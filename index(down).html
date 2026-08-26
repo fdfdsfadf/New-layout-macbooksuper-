@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167917296547686"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDD8GECEW2" crossorigin="anonymous"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZDD8GECEW2');
+  </script>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <meta property="og:title" content="Play Unblocked Games | macbooksuck.xyz">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="macbooksuck games unblocked anti-teachers mySBC">
+    <meta property="og:description" content="macbooksuck">
+    <meta property="og:type" content="website">
+    <meta name="google-adsense-account" content="ca-pub-8167917296547686">
+    <meta name="keywords" content="macbooksuck, macbooksuck xyz, macbooksuck.com, mackbooksuck, macbookssuck, mackbookssuck, mySBC, macbook suck, macbooks suck, mcbooksuck, mcbooksucks">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <title>Education Perfect | Learning, Assessment and Analytics Platform</title>
+    <link rel="icon" href="assets/favicon/education-perfect.png">
+    <link rel="stylesheet" href="styles.css?2313123dsfs4ddsujafgyat">
+    <meta property="og:title" content="Play Unblocked Games | macbooksuck.xyz">
+    <meta property="og:description" content="Instant access to browser-based games. No downloads.">
+    <meta property="og:image" content="https://main1.macbooksuck.xyz/assets/favicon/education-perfect.png">
+    <meta property="og:url" content="https://main1.macbooksuck.xyz">
+    <link rel="canonical" href="https://main1.macbooksuck.xyz">
+    <style>
+.icon-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: transparent;
+  position: static; /* Remove fixed positioning */
+  width: 100%;
+}
+
+.icon-bar a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-bar a:hover {
+  color: #ffcc00;
+}
+
+.icon-bar i,
+.icon-bar img.nav-icon {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.icon-bar a.active i {
+  color: #1eff00;
+  text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.vertical-icons {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 4px;
+}
+        
+.icon-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+
+#idleCountdown {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(25, 25, 25, 0.9);
+  color: #1eff00;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-family: 'Courier New', monospace;
+  z-index: 9999;
+  pointer-events: none;
+  box-shadow: 0 0 10px #1eff00, 0 0 20px #1eff00;
+  text-shadow: 0 0 5px #1eff00;
+  animation: pulseGlow 1s infinite alternate;
+}
+
+        
+#webAppPopup {
+  position: fixed !important;
+  bottom: 32px !important;
+  right: 32px !important;
+  left: auto !important;
+  top: auto !important;
+  margin: 0 !important;
+  z-index: 10000 !important;
+  width: 340px;
+  max-width: 90vw;
+  min-width: 180px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  background: #09003d;
+  color: #fff;
+  border-radius: 12px;
+  display: none; /* default off */
+}
+        
+#webAppPopup .callout-header {
+    font-weight: bold;
+    font-size: 16px;
+}
+  
+    </style>
+</head>
+<body>
+        <div class="icon-bar">
+<a href="https://discord.com/invite/bUhB26NxNC" target="_blank" title="Join our Discord">
+  <img src="assets/img/discord.png" alt="Discord" class="icon-img">
+</a>
+
+<a href="#" id="musicToggle" title="Toggle Music">
+  <img src="assets/img/2music-off.png" alt="Music Toggle" id="musicIcon" class="icon-img" />
+</a>
+</div>
+
+<div id="musicPlayer" style="display:none; position:fixed;
+top:60px; right:20px; background:#000; border:2px solid violet;
+padding:10px; border-radius:15px; z-index:9999;">
+  <audio id="bgAudio" controls>
+    <source src="sigma.mp3" type="audio/mpeg">
+    Your browser doesn't support audio.
+  </audio>
+</div>
+<div id="idleOverlay" style="display:none; position:fixed; top:0;
+left:0; width:100vw; height:100vh; background:#000; z-index:99999;">
+  <img src="assets/img/Drawing-29.sketchpad.png" alt="Idle Cover" style="width:100%; height:100%; object-fit:cover;">
+  
+<button id="resumeBtn" onclick="hideIdleOverlay()" style="
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #888;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+">
+  Resume
+</button>
+</div>
+
+<div id="idleCountdown" style="
+  position:fixed;
+  top:50px;
+  left:50%;
+  transform:translateX(-50%);
+  background-color:rgba(0,0,0,0.5);
+  color:#1eff00;
+  font-size:18px;
+  padding:6px 12px;
+  border-radius:10px;
+  z-index:9999;
+  font-family:monospace;
+  pointer-events:none;
+">
+  Idle timer: 20:00
+</div>
+
+<script>
+let lastActive = Date.now();
+const idleDuration = 20 * 60 * 1000; // 20 minutes
+const countdownEl = document.getElementById("idleCountdown");
+let idleActive = false;
+
+function showIdleOverlay() {
+  document.getElementById("idleOverlay").style.display = "block";
+  idleActive = true;
+}
+
+function hideIdleOverlay() {
+  document.getElementById("idleOverlay").style.display = "none";
+  idleActive = false;
+  lastActive = Date.now(); // Reset timer
+}
+
+["mousemove", "click", "scroll", "touchstart"].forEach(evtName => {
+  document.addEventListener(evtName, (e) => {
+    if (!idleActive) {
+      lastActive = Date.now();
+    } else {
+      // Prevent mouse movement from resetting timer during idle
+      if (evtName === "mousemove") {
+        e.stopPropagation();
+        e.preventDefault();
+      }
+    }
+  }, true);
+});
+
+// Resume only via key press or resume button
+document.addEventListener("keydown", () => {
+  if (idleActive) hideIdleOverlay();
+});
+
+document.getElementById("resumeBtn").addEventListener("click", () => {
+  if (idleActive) hideIdleOverlay();
+});
+
+// Update countdown every second
+setInterval(() => {
+  const timeLeft = idleDuration - (Date.now() - lastActive);
+  if (timeLeft <= 0 && !idleActive) {
+    showIdleOverlay();
+    countdownEl.textContent = "Idle timer: 00:00";
+  } else if (!idleActive) {
+    const minutes = Math.floor(timeLeft / 60000);
+    const seconds = Math.floor((timeLeft % 60000) / 1000);
+    countdownEl.textContent = `Idle timer: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  }
+}, 1000);
+</script>
+
+<script>
+function toggleMusicPlayer() {
+  const player = document.getElementById("musicPlayer");
+  const audio = document.getElementById("bgAudio");
+  const icon = document.getElementById("musicIcon");
+
+  if (player.style.display === "none") {
+    player.style.display = "block";
+    audio.play();
+    icon.src = "assets/img/1music-on.png";
+  } else {
+    player.style.display = "none";
+    audio.pause();
+    icon.src = "assets/img/2music-off.png";
+  }
+}
+
+// Hi? why are you reading this? eh this is a watermark for macbooksuck so ok bye!
+document.getElementById("musicToggle").addEventListener("click", function(e) {
+  e.preventDefault();
+  toggleMusicPlayer();
+});
+</script>
+
+    
+<div class="settings-container">
+  <button class="settings-toggle" onclick="toggleSettings()">⚙️</button>
+  <div class="settings-dropdown" id="settingsDropdown">
+    <label>
+      Tab Title:
+      <input type="text" id="titleInput" placeholder="Enter new tab title" />
+    </label>
+    <label>
+      Tab Icon URL:
+      <input type="text" id="faviconInput" placeholder="Enter favicon image URL" />
+    </label>
+    <label>
+      Idle Timer (minutes):
+      <input type="number" id="idleTimeInput" placeholder="e.g. 20" min="1" />
+    </label>
+    <label>
+      Idle Image URL:
+      <input type="text" id="idleImageInput" placeholder="Enter image URL for idle overlay" />
+    </label>
+
+    <div class="settings-actions">
+      <button class="reset-btn" onclick="resetSettings()">Reset</button>
+      <!-- Future button can go here -->
+    </div>
+
+    <button onclick="applySettings()" class="apply-btn">Apply</button>
+  </div>
+</div>
+
+
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-logo">
+                <div class="logo-icon">
+                    <span>CG</span>
+                </div>
+                <div class="logo-text">
+                    <div>macbook</div>
+                    <div>suck</div>
+                </div>
+            </div>
+
+            <div class="header-search">
+                <input type="text" placeholder="Search Bar!" class="search-input">
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <div class="welcome-section">
+                        <h2>Welcome to macbooksuck</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <span class="feature-dot blue"></span>
+                                125+ games
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-dot green"></span>
+                                No install needed
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-dot orange"></span>
+                                On any device
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-dot purple"></span>
+                                Play with friends
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="sidebar-nav">
+                        <div class="sidebar-item active" id="navHome" onclick="showHome()">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-label">Home</span>
+                        </div>
+
+                        <a href="https://movie-hub.macbooksuck.xyz" class="sidebar-item" target="_blank">
+                            <span class="nav-icon">🎬</span>
+                            <span class="nav-label">Movie Hub</span>
+                        </a>
+                        
+                        <a href="https://forms.office.com/r/u4eZi5Cr4D" class="sidebar-item" target="_blank">
+                            <span class="nav-icon">📋</span>
+                            <span class="nav-label">feedback (microsoft form)</span>
+                        </a>
+
+                        <a href="https://forms.gle/hWubwTMsiNaT93it7" class="sidebar-item" target="_blank">
+                            <span class="nav-icon">📋</span>
+                            <span class="nav-label">feedback (google form)</span>
+                        </a>
+                        
+                        <div class="sidebar-item" id="navEmulators" onclick="showEmulators()">
+                              <span class="nav-icon">🎮</span>
+                              <span class="nav-label">Emulators</span>
+                        </div>
+
+                        <div class="sidebar-item" id="navHorror" onclick="showHorror()">
+                              <span class="nav-icon">🎮</span>
+                              <span class="nav-label">Horror games</span>
+                        </div>
+
+                        <div class="sidebar-item" id="navNew" onclick="showNewGames()">
+                              <span class="nav-icon">🆕</span>
+                              <span class="nav-label">New Games</span>
+                        </div>
+                        
+                        <a href="https://ws.macbooksuck.xyz" class="sidebar-item" target="_blank">
+                            <span class="nav-icon">🔨</span>
+                            <span class="nav-label">White Screen Tool</span>
+                        </a>
+                        
+                        <div class="sidebar-item">
+                            <span class="nav-icon">🔥</span>
+                            <span class="nav-label">Coming soon!</span>
+                        </div>
+
+                        <div class="sidebar-item">
+                            <span class="nav-icon">🤝</span>
+                            <span class="nav-label">Partners</span>
+                        </div>
+                    </nav>
+
+                        <div class="icon-bar">
+                            <a href="https://discord.com/invite/bUhB26NxNC" target="_blank" title="Join our Discord">
+                                <img src="assets/img/discord.png" alt="Discord" class="icon-img">
+                            </a>
+                            <a href="#" id="musicToggle" title="Toggle Music">
+                                <img src="assets/img/2music-off.png" alt="Music Toggle" id="musicIcon" class="icon-img" />
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            <div id="webfarmNotification" class="notif hidden" role="status" aria-live="polite" aria-atomic="true">
+                <div class="notif-inner">
+                    <div class="notif-left">
+                        <strong class="notif-title">Update</strong>
+                        <div class="notif-message">Added Buckshot Roulette and Cuphead</div>
+                    </div>
+                    <div class="notif-actions">
+                        <button id="notifDetails" class="notif-btn">Details</button>
+                        <button id="notifDismiss" class="notif-btn" aria-label="Dismiss notification">✕</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+            // Check the "aggression level" in local storage
+let notifyStatus = localStorage.getItem('annoying_popup_status');
+
+// If status is null (first time) or '1' (first dismissal), show it
+if (!notifyStatus || notifyStatus === '1') {
+    window.onload = () => {
+        const overlay = document.createElement('div');
+        overlay.id = 'aggro-notify';
+        overlay.innerHTML = `
+            <div style="background:red; color:white; padding:20px; font-weight:bold; text-align:center; position:fixed; top:0; left:0; width:100%; z-index:9999; border-bottom:5px solid black;">
+                This message will only appear twice because it is not that important. I am reviewing the feedback forms and trying to add those games. :) Sorry no updates in a while I was busy trying to transfer the domain to a different provider. Also I will be adding an automatic refresh so it will auto refresh when it is out of sync. soz for the notif being ugly it was rushed.
+                <button onclick="dismissNotify()" style="margin-left:20px; cursor:pointer; background:white; border:none; padding:5px 10px; font-weight:bold;">CLOSE</button>
+            </div>
+        `;
+        document.body.prepend(overlay);
+    };
+}
+
+function dismissNotify() {
+    const currentStatus = localStorage.getItem('annoying_popup_status');
+    
+    if (!currentStatus) {
+        // First dismissal: set status to 1
+        localStorage.setItem('annoying_popup_status', '1');
+    } else if (currentStatus === '1') {
+        // Second dismissal: set status to 2 (hidden forever)
+        localStorage.setItem('annoying_popup_status', '2');
+    }
+    
+    document.getElementById('aggro-notify').remove();
+}
+
+// Helper function for you to reset it manually via console
+function resetNotify() {
+    localStorage.removeItem('annoying_popup_status');
+    location.reload();
+}
+            </script>
+                        
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <section class="games-section">
+                    <h2 class="section-title">Games <strong>macbooksuck</strong></h2>
+                    <div class="games-grid">
+                        <a href="https://games.macbooksuper.xyz/games/proxy/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Proxy</div>
+                                <div class="game-subtitle">Click enter portal</div>
+                            </div>
+                            <div class="badge top-rated">Working(sorta)</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/bit-planes/" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/bit-planes.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">bitplanes</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/bit-planes-2" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">bitplanes 2 player</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                          </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ElectronOS/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">ElectronOS Emulator</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/10-minutes-till-dawn/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">10 Minutes Till Dawn</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                         </a>
+
+                        <a href="https://macbooksuper.xyz/games/99balls/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">99 Balls</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                          </a>
+
+                        <a href="https://99nights.macbooksuck.xyz/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">99 Nights In The Forrest</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                          </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/100ng/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">100 Player Pong</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                          </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/2048/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">2048</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/achievementunlocked/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Achievement Unlocked</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/adarkroom/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">A Dark Room</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ages-of-conflict/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Ages Of Conflict</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/amazing-rope-police/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Amazing Rope Police</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/arcadewizard/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Arcade Wizard</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+                    
+                        <a href="https://games.macbooksuper.xyz/games/avalanche/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Avalanche</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/awesometanks2/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Awesome Tanks 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+
+                        <a href="https://games.macbooksuper.xyz/games/backrooms-2d/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Backrooms</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+
+                        <a href="https://games.macbooksuper.xyz/games/baldis-basics/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Baldis Basics</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/baldisbasicsfieldtripcampingremake/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Baldis Basics Camping</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/basket-random/" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/basket-random.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Basket Random</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://billards.macbooksuck.xyz/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Billards/Pool</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/bitlife/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Bitlife</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/block-blast/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Block Blast</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Bloons-TD4/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Bloons Tower Defence 4</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/boxing-random/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Boxing Random</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://buckshot-roulette.macbooksuck.xyz/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Buckshot Roulette</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/burger-and-frights/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Burger And Frights</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/charrio-kart/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Charrio Kart</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/cheesypuffclicker/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cheesy Puff Clicker</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/chrome-dino/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Chrome Dino</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/circlo/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Circlo</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://city-car-driving-stunt-master1.macbooksuck.xyz/" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/city-car-stunt-master.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">City Car Stunt Master</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/cluster/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/cluster1.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cluster</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/connect3/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Connect 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/cookie-clicker/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cookie Clicker</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/core-ball/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Core Ball</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuck.xyz/games/crossyroad/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/crossy-road.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">CrossyRoad</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/csgo-clicker/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">CS:GO Clicker</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https:/cuphead.macbooksuck.xyz" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cuphead</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/ctr/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cut the Rope</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ctr-holiday/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cut the Rope Holiday</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ctr-tr/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cut the Rope Time Travel</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/cubefield/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cubefield</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+                  
+                        <a href="https://games.macbooksuper.xyz/games/dante/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Dante</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/deathcario/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Death Car IO</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/deepest-sword/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Deepest Sword</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/death-run-3d/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Death Run 3D</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/DogeMiner/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Dodge Miner</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://dontwordle.macbooksuck.xyz/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Don't Wordle</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/dragon-vs-bricks/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Dragon VS Bricks</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/drive-mad/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Drive Mad</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ducklife1/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Duck Life 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ducklife2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Duck Life 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/ducklife3/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Duck Life 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://duklife4.macbooksuck.xyz/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Duck Life 4</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/edge-surf/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/edge-surf.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Edge Surf</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Epic%20Tower%20Defense/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Epic Tower Defence</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-1/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/Escape-Road-1.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-City-2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road City 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-3/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/Escape-Road-3.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/evil-glitch/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Evil Glitch</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/evolution/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Evolution</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/exo/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Exo</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/fairsquares/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Fair Squares</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Five-Nights-at-Epstein/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Five Nights at Epstein</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/flappy-bird/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/flappy-bird.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Flappy Bird</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/flashtetris/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Flash Tetris</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://flight-school.macbooksuck.xyz" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/flight-school.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Flight School</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/fruitninja/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Fruit Ninja</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/game-inside/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Game Inside a Game</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/geodash/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/geometry-dash.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Geometry Dash (Scratch)</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/getting-over-it/GOI.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Getting Over It (Scratch)</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/go-ball/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Go Ball</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/google-feud/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/google-feud.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Google Feud</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/halfLife/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Half Life 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/helios/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Helios</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/hba/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Hover Bot Arena</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/hextris/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Hextris</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/houseofhazards/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">House Of Hazards</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/interactivebuddy/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Interactive Buddy</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/jelly-merge/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Jelly Merge</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/jetpack-joyride/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Jetpack Joyride</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/just-fall/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Just Fall</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/kitchen-gun-game/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Kitchen Gun Game</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/Learn-to-fly/1/" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/ltf.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Learn to Fly 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/Learn-to-fly/2/" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/ltf2.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Learn to Fly 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/level-devil/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/level-devil.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Level Devil</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/madalin-stunt-cars-3/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Madalin Stunt Cars 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/mario/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Mario</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/minecraft-classic/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/minecraft_classic.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Minecraft Class</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/miniputt/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Mini-putt</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/error" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Monkey Mart :(</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge not-working">Not working</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/monster-tracks/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Monster Tracks</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/n-gon/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">n-gon</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Ninja%20Dash/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Ninja Dash</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/pacman3d/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Pacman 3D</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/pandemic2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Pandemic 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/games/paperio2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Paper.io 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/particle-clicker/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Particle Clicker</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/pixel-gun-survival/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Pixel Gun Survival</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/polytrack/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/polytrack.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Polytrack</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Polygon%20Fusion/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Polygon Fusion</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/portalflash/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Portal (Flash)</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/RagdollArchers/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Ragdoll Archers</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/retro-bowl/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Retro Bowl</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/retro-bowl-college/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Retro Bowl College</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/1/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/2/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/3/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/4/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 4</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/Transfer/1/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle Transfer 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/Transfer/2/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle Transfer 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/rolly-vortex/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Rolly Vortex</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/rooftop-snipers/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Roof-Top Snipers</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/sand-game/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Sand Game</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/sandboxels/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Sandboxels</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Hot</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/santy-is-home/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Santy Is Home</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/scrapmetal/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Scrap Metal</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/slope/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/slope.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Slope</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+                        
+                        <a href="https://slow-roads.macbooksuck.xyz/" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Slow Roads</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/Snow-Rider3D/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/snow-rider.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Snow Rider</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/snowbattle/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Snowbattle</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/soccer-random/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Soccer Random</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/space-company/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Space Company</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/spacegarden/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Space Garden</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/stack/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Stack</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/station-141/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Station 141</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/stick-duel-battle/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Stick Duel Battle</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/stickman-hook/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Stickman Hook</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/street-wheelie/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Street Wheelie</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge top-rated">Top rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/subway-surfers/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Subway Surfers</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/super-star-car/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Super Star Car</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge developer-rated">Game of the Week</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/super-star-car-2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Super Star Car 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge not-working">Not working</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Super%20Tic-Tac-Toe/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Super Tic-Tac-Toe</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/sm64/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Super Mario 64</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/swerve/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Swerve</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/tag/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/tag.png.jpeg');"></div>
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Tag</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/tank-trouble-2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Tank Trouble 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/tanuki-sunset/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Tanuki Sunset</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/temple-run-2/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Temple Run 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/territorial.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">territorial.io</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/thebowlingclub/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">The Bowling Club</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/thisistheonlylevel/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">This Is The Only Level</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/timeshooter3swat/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/timeshooterswat.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Time Shooter 3: SWAT</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/twitch-tetris/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Twitch Tetris</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/unfairmario/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Unfair Mario</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/volley-random/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Volley Random</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/wallsmash/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Wall Smash</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/web-farm/index.html" class="game-card">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/web_farm_mew.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title"></div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge only-here">Only found here</div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/games/wordle/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Wordle Unlimited</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/worldshardestgame/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Worlds Hardest Game</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://games.macbooksuper.xyz/games/yohoho_io/index.html" class="game-card">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Yohoho.io</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge updated">Developer rated</div>
+                        </a>
+
+                        <a href="https://macbooksuck.xyz/games/GBA/index.html" class="game-card emulator-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">GameBoy Adv Emulator</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                        </a>
+
+                        <a href="https://fnaf.macbooksuck.xyz/hd_fnaf/index.html" class="game-card emulator-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">FNAF-Collection</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                       </a>
+                        
+                        <a href="https://99nights.macbooksuck.xyz/index.html" class="game-card horror-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">99 Nights In The Forrest</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/backrooms-2d/index.html" class="game-card horror-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Backrooms</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/burger-and-frights/index.html" class="game-card horror-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Burger And Frights</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/games/dante/index.html" class="game-card horror-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Dante</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://games.macbooksuck.xyz/games/santy-is-home/index.html" class="game-card horror-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Santy Is Home</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge hot">Horror</div>
+                        </a>
+
+                        <a href="https://99nights.macbooksuck.xyz/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">99 Nights In The Forrest</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                          </a>
+
+
+                        <a href="https://games.macbooksuper.xyz/games/block-blast/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Block Blast</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Bloons-TD4/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Bloons Tower Defence 4</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://billards.macbooksuck.xyz/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Billards/Pool</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/bit-planes-2" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">bitplanes 2 player</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                          </a>
+
+                        <a href="https://buckshot-roulette.macbooksuck.xyz/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Buckshot Roulette</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https:/cuphead.macbooksuck.xyz" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Cuphead</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://dontwordle.macbooksuck.xyz/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Don't Wordle</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-1/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/Escape-Road-1.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/Escape-Road-3/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/Escape-Road-3.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Escape Road 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://flight-school.macbooksuck.xyz" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/flight-school.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Flight School</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                        <a href="https://riddle.macbooksuck.xyz/Learn-to-fly/1/" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/ltf.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Learn to Fly 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/Learn-to-fly/2/" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/ltf2.jpg');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Learn to Fly 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/level-devil/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/level-devil.png');"></div>
+                            <div class="card-content">
+                                <div class="game-title">Level Devil</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/retro-bowl-college/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Retro Bowl College</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/1/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/2/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/3/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 3</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/School/4/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle School 4</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/Transfer/1/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle Transfer 1</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://riddle.macbooksuck.xyz/Transfer/2/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Riddle Transfer 2</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://slow-roads.macbooksuck.xyz/" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Slow Roads</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/tag/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background has-image" style="background-image: url('assets/img/game-previews/tag.png.jpeg');"></div>
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Tag</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+
+                        <a href="https://games.macbooksuper.xyz/games/worldshardestgame/index.html" class="game-card new-card" style="display: none;">
+                            <div class="card-background blue-purple"></div>
+                            <div class="card-content">
+                                <div class="game-title">Worlds Hardest Game</div>
+                                <div class="game-subtitle">Click to play</div>
+                            </div>
+                            <div class="badge new">New</div>
+                        </a>
+                        
+                </section>
+
+                <section class="games-section">
+                    <h2 class="section-title">Emulators/Others</h2>
+                    <div class="games-grid featured">
+
+                        <a href="https://discord.gg/bUhB26NxNC" class="game-card">
+                            <div class="card-background green-blue"></div>
+                            <div class="card-content">
+                                <div class="game-title">Discord</div>
+                            </div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/scripts/fullscreen-script" class="game-card">
+                            <div class="card-background green-blue"></div>
+                            <div class="card-content">
+                                <div class="game-title">Fullscreen Script</div>
+                                <div class="game-subtitle">Popular choice</div>
+                            </div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/scripts/tab-title-switcher-script" class="game-card">
+                            <div class="card-background green-blue"></div>
+                            <div class="card-content">
+                                <div class="game-title">Tab Title Script</div>
+                                <div class="game-subtitle">Popular choice</div>
+                            </div>
+                        </a>
+
+                        <a href="https://macbooksuper.xyz/scripts/toggle-inverted-script" class="game-card">
+                            <div class="card-background green-blue"></div>
+                            <div class="card-content">
+                                <div class="game-title">Toggle Inverted Script</div>
+                                <div class="game-subtitle">Popular choice</div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div id="game-modal" class="modal-overlay">
+    <div class="game-window" id="game-window-box">
+        
+        <div class="window-bar">
+            <div id="save-indicator" class="save-status">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                Cloud Save Active
+            </div>
+            
+            <div class="window-controls">
+                <button class="btn-control" onclick="toggleFullscreen()">
+                    <i class="fa-solid fa-expand"></i> Fullscreen
+                </button>
+                <button class="btn-control btn-close" onclick="closeGame()">
+                    <i class="fa-solid fa-xmark"></i> Close
+                </button>
+            </div>
+        </div>
+
+        <div class="iframe-container">
+            <iframe id="game-frame" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    // 1. CONFIGURATION
+    const supabaseUrl = 'https://ahkqnnvrmpvvwudyjrin.supabase.co';
+    const supabaseKey = 'sb_publishable_Y8MVDWUNrev1SXAZ8-vJhA_ZDmqDwgi'; // PASTE THE FULL KEY HERE
+    const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+    // 2. DOM ELEMENTS
+    const modal = document.getElementById('game-modal');
+    const gameWindow = document.getElementById('game-window-box');
+    const iframe = document.getElementById('game-frame');
+    const saveIndicator = document.getElementById('save-indicator');
+    let currentUser = null;
+
+    // 3. AUTH & INIT
+    async function initAuth() {
+        const { data: { user } } = await supabase.auth.getUser();
+        currentUser = user;
+        updateUI();
+    }
+    
+    function updateUI() {
+        if (currentUser) {
+            saveIndicator.style.opacity = "1";
+            saveIndicator.innerHTML = '<i class="fa-solid fa-check-circle"></i> This game is saved with the login feature';
+        } else {
+            saveIndicator.style.opacity = "1";
+            saveIndicator.style.color = "var(--cg-orange)";
+            saveIndicator.innerHTML = '<span style="cursor:pointer" onclick="signIn()">⚠️ Not Logged In (Click to Login)</span>';
+        }
+    }
+
+    async function signIn() {
+        await supabase.auth.signInWithOAuth({ provider: 'google' });
+    }
+
+    initAuth();
+
+    // 4. OPEN/CLOSE GAME
+    // This function is called by your game cards
+    window.openGame = function(gamePath) {
+        modal.classList.add('active'); // Show modal with animation
+        
+        // Construct URL: games.macbooksuck.xyz + /games/name
+        // Ensure gamePath input is like 'games/bit-planes-2'
+        iframe.src = `https://games.macbooksuck.xyz/${gamePath}/`;
+
+        if (currentUser) {
+            // Give iframe a moment to load, then check for saves
+            setTimeout(() => loadCloudSave(gamePath), 1000);
+        }
+    };
+
+    window.closeGame = function() {
+        modal.classList.remove('active');
+        setTimeout(() => { iframe.src = ""; }, 300); // Clear source to stop audio
+    };
+
+    window.toggleFullscreen = function() {
+        if (!document.fullscreenElement) {
+            gameWindow.requestFullscreen().catch(err => console.log(err));
+        } else {
+            document.exitFullscreen();
+        }
+    };
+
+    // 5. SAVE DATA BRIDGE
+    window.addEventListener("message", async (event) => {
+        // Security: Only accept from your games domain
+        if (!event.origin.endsWith("macbooksuck.xyz")) return;
+
+        // SAVE TO CLOUD
+        if (event.data.type === "GAME_SAVE" && currentUser) {
+            console.log("Saving...", event.data.key);
+            await supabase.from('saves').upsert({ 
+                user_id: currentUser.id, 
+                game_path: event.data.gameId, 
+                save_json: { [event.data.key]: event.data.value }
+            }, { onConflict: 'user_id, game_path' });
+        }
+    });
+
+    async function loadCloudSave(pathKey) {
+        if (!currentUser) return;
+        
+        // Find save by matching the folder name (loose match)
+        const { data } = await supabase
+            .from('saves')
+            .select('save_json')
+            .eq('user_id', currentUser.id)
+            .ilike('game_path', `%${pathKey}%`) 
+            .maybeSingle();
+
+        if (data && data.save_json) {
+            console.log("Sending Cloud Save to Game...");
+            iframe.contentWindow.postMessage({
+                type: "LOAD_SAVE",
+                payload: data.save_json
+            }, "*");
+        }
+    }
+</script>
+    
+    <script>
+    document.querySelectorAll('.game-button').forEach(btn => {
+  const bg = btn.dataset.bg;
+  if (bg) {
+    btn.style.setProperty('--bg-url', `url(${bg})`);
+  }
+});
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".game-card[data-game-url]").forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      const url = card.getAttribute("data-game-url");
+      if (!url || card.dataset.preloaded) return;
+
+      const iframe = document.createElement("iframe");
+      iframe.src = url;
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+
+      card.dataset.preloaded = "true";
+    });
+  });
+});
+    </script>
+<script>
+document.querySelector('.search-input').addEventListener('input', function(e) {
+  const query = e.target.value.toLowerCase();
+  document.querySelectorAll('.game-card').forEach(card => {
+    const title = card.querySelector('.game-title')?.textContent.toLowerCase() || '';
+    card.style.display = title.includes(query) ? 'block' : 'none';
+  });
+});
+
+function showEmulators() {
+  document.getElementById('navEmulators').classList.add('active');
+  document.getElementById('navHome').classList.remove('active');
+  document.getElementById('navHorror').classList.remove('active');
+  document.getElementById('navNew').classList.remove('active');
+
+  document.querySelectorAll('.game-card').forEach(card => {
+    card.style.display = 'none';
+  });
+  document.querySelectorAll('.emulator-card').forEach(card => {
+    card.style.display = 'block';
+  });
+}
+
+function showHorror() {
+  document.getElementById('navHorror').classList.add('active');
+  document.getElementById('navHome').classList.remove('active');
+  document.getElementById('navEmulators').classList.remove('active');
+  document.getElementById('navNew').classList.remove('active');
+
+  document.querySelectorAll('.game-card').forEach(card => {
+    card.style.display = 'none';
+  });
+  document.querySelectorAll('.horror-card').forEach(card => {
+    card.style.display = 'block';
+  });
+}
+
+function showNewGames() {
+  document.getElementById('navNew').classList.add('active');
+  document.getElementById('navHome').classList.remove('active');
+  document.getElementById('navEmulators').classList.remove('active');
+  document.getElementById('navHorror').classList.remove('active');
+
+  document.querySelectorAll('.game-card').forEach(card => {
+    card.style.display = 'none';
+  });
+  document.querySelectorAll('.new-card').forEach(card => {
+    card.style.display = 'block';
+  });
+}
+
+function showHome() {
+  document.getElementById('navHome').classList.add('active');
+  document.getElementById('navEmulators').classList.remove('active');
+  document.getElementById('navHorror').classList.remove('active');
+  document.getElementById('navNew').classList.remove('active');
+
+  document.querySelectorAll('.game-card').forEach(card => {
+    if (!card.classList.contains('emulator-card') &&
+        !card.classList.contains('horror-card') &&
+        !card.classList.contains('new-card')) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+<script>
+let idleDuration = 20 * 60 * 1000; // default 20 minutes
+
+function toggleSettings() {
+  const dropdown = document.getElementById('settingsDropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+function applySettings() {
+  const newTitle = document.getElementById('titleInput').value;
+  const newFavicon = document.getElementById('faviconInput').value;
+  const idleTime = document.getElementById('idleTimeInput').value;
+  const idleImage = document.getElementById('idleImageInput').value;
+
+  if (newTitle) {
+    document.title = newTitle;
+    localStorage.setItem('customTitle', newTitle);
+  }
+
+  if (newFavicon) {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.href = newFavicon;
+    localStorage.setItem('customFavicon', newFavicon);
+  }
+
+  if (idleTime) {
+    localStorage.setItem('customIdleTime', idleTime);
+    idleDuration = parseInt(idleTime) * 60 * 1000;
+  }
+
+  if (idleImage) {
+    localStorage.setItem('customIdleImage', idleImage);
+    const idleOverlayImg = document.querySelector('#idleOverlay img');
+    if (idleOverlayImg) idleOverlayImg.src = idleImage;
+  }
+}
+
+function resetSettings() {
+  localStorage.removeItem('customTitle');
+  localStorage.removeItem('customFavicon');
+  localStorage.removeItem('customIdleTime');
+  localStorage.removeItem('customIdleImage');
+  location.reload();
+}
+
+window.addEventListener('load', () => {
+  const savedTitle = localStorage.getItem('customTitle');
+  const savedFavicon = localStorage.getItem('customFavicon');
+  const savedIdleTime = localStorage.getItem('customIdleTime');
+  const savedIdleImage = localStorage.getItem('customIdleImage');
+
+  if (savedTitle) {
+    document.title = savedTitle;
+    document.getElementById('titleInput').value = savedTitle;
+  }
+
+  if (savedFavicon) {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.href = savedFavicon;
+    document.getElementById('faviconInput').value = savedFavicon;
+  }
+
+  if (savedIdleTime) {
+    document.getElementById('idleTimeInput').value = savedIdleTime;
+    idleDuration = parseInt(savedIdleTime) * 60 * 1000;
+  }
+
+  if (savedIdleImage) {
+    document.getElementById('idleImageInput').value = savedIdleImage;
+    const idleOverlayImg = document.querySelector('#idleOverlay img');
+    if (idleOverlayImg) idleOverlayImg.src = savedIdleImage;
+  }
+});
+</script>
+<script>
+function toggleSettings() {
+  const dropdown = document.getElementById("settingsDropdown");
+  // Toggle between 'block' and 'none'
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+    
+<script src="javascript/notification.js"></script>   
+<script src="javascript/banner.js"></script>    
+<script src="javascript/version.js"></script>    
+</body>
+</html>
